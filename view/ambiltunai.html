@@ -17,16 +17,76 @@
         <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
             <button onclick="SeRatus()"><- 100.000</button>
             <button onclick="duaRatus()"><- 200.000</button>
+            <button onclick="tigaRatus()"><- 300.000</button>
             <button onclick="limaRatus()"><- 500.000</button>
         </div>
         <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
             <button onclick="satujuta()">1.000.000 -></button>
             <button onclick="satusetengah()">1.500.000 -></button>
             <button onclick="duajuta()">2.000.000 -></button>
-            <button onclick="lainnya()">TRANSAKSI LAINNYA -></button>
+            <a href="jenistransaksi.html" class="mr-36">TRANSAKSI LAINNYA -></a>
         </div>
     </div>
     <script>
+        let saldo = 5000000;
+        let paket = {
+            Seratus: '100000',
+            duaratus: '200000',
+            tigaratus: '300000',
+            limaratus: '500000',
+            satujuta: '1000000',
+            satusetengah: '1500000',
+            duajuta: '2000000'
+        };
+
+        function SeRatus() {
+            let saldoakhir = saldo - paket.Seratus;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function duaRatus() {
+            let saldoakhir = saldo - paket.duaratus;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function tigaRatus() {
+            let saldoakhir = saldo - paket.tigaratus;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function limaRatus() {
+            let saldoakhir = saldo - paket.limaratus;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function satujuta() {
+            let saldoakhir = saldo - paket.satujuta;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function satusetengah() {
+            let saldoakhir = saldo - paket.satusetengah;
+            confirm(`Sisa saldo anda ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
+
+        function duajuta() {
+            let saldoakhir = saldo - paket.duajuta;
+            confirm(`Sisa saldo anda : ${saldoakhir}`)
+            window.open('ambilkartu.html', '_blank')
+            window.close('ambiltunai.html');
+        }
     </script>
 </body>
 
