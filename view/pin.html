@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <title>PIN</title>
 </head>
-
 <body class="bg-blue-700">
-
-    <div class="flex ml-5 mt-10">
-        <div class="font-bold mx-auto flex justify-center text-white text-3xl mt-8">
-            <img src="../img/pin.png" class="w-10/12 mt">
+    <div class="flex mt-16 text-white font-bold text-4xl">
+        <div class="flex justify-center ml-20">
+            <img src="../img/pin.png">
         </div>
-        <div class="font-bold text-white text-center text-3xl mt-20 mx-auto">
+        <div class="text-center w-6/12 mt-12">
             <h2>MASUKAN PIN</h2>
             <form action="" onsubmit="pin()">
-                <input type="password" required id="angkapin" class="border-2 text-black border-black h-8 mt-32">
-                <input type="submit" value="ENTER">
+                <input type="password" required class="h-[35px] rounded-xl ml-20 mt-20 text-black" id="angkapin">
+                <input type="submit" class="text-3xl" value="ENTER">
             </form>
-            <div class="w-8/12 mx-auto">
-                <h2 class="mt-32">
-                    <h2>TEKAN 'ENTER' JIKA SELESAI MEMASUKAN PIN</h2>
-            </div>
+            <h2 class="mt-20 ml-10">TEKAN 'ENTER' JIKA SELESAI MEMASUKAN PIN</h2>
         </div>
     </div>
-    <script>
-        function pin() {
-            let pin = document.getElementById("angkapin").value;
-            if (pin == '123456') {
-                window.open('/view/ambiltunai.html', '_blank');
-                window.close('/view/pin.html?');
-            } else {
-                alert('pin yang anda masukan salah')
-            }
-        };
-    </script>
+    
 </body>
-
+<script>
+   function pin(){
+       let pin = document.getElementById('angkapin').value;
+       if (pin == 123456) {
+           alert('Terimakasih')
+           window.open('ambiltunai.html')
+           window.close('pin.html')
+       }else{
+           alert('Pin yang anda masukan salah')
+       }
+   };
+</script>
 </html>

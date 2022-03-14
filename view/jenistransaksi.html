@@ -10,43 +10,29 @@
 </head>
 
 <body class="bg-blue-700">
-    <div class="text-center text-white text-3xl mt-16">
+    <div class="text-center text-white text-4xl mt-16">
         <h2>PILIH JENIS TRANSAKSI</h2>
     </div>
-    <div class="text-center flex justify-center">
-        <div class="mr-60 text-white text-3xl">
-            <div class="mt-20">
-                <a href="#">
-                    <- PENARIKAN</a>
-            </div>
-            <div class="mt-20 mr-5">
-                <a href="#">
-                    <- TRANSFER</a>
-            </div>
-            <div class="mt-20">
-                <a href="#">
-                    <- PEMBELIAN</a>
-            </div>
-            <div class="mt-20 mr-8">
-                <a href="ambilkartu.html">
-                    <- LAINNYA</a>
-            </div>
+    <div class="flex justify-center mb-10">
+        <div class="grid  space-y-20 w-2/6 text-white text-4xl mt-16">
+            <button><- PENARIKAN</button>
+            <button class="mr-5"><- TRANSFER</button>
+            <button><- PEMBELIAN</button>
+            <button class="mr-8"><- LAINNYA</button>
         </div>
-        <div class="text-white text-3xl mt-8 text-right">
-            <div class="mt-[50px]">
-                <a href="#">INFO REKENING -></a>
-            </div>
-            <div class="mt-20">
-                <a href="#">PEMBAYARAN -></a>
-            </div>
-            <div class="mt-20">
-                <a href="#">UBAH PIN -></a>
-            </div>
-            <div class="mt-20">
-                <a href="ambilkartu.html">KELUAR -></a>
-            </div>
+        <div class="grid space-y-20 w-2/6 text-white text-4xl mt-16">
+            <button>INFO REKENING -></button>
+            <button class="ml-5">PEMBAYARAN -></button>
+            <button class="ml-20">UBAH PIN -></button>
+            <button class="ml-28" onclick="keluar()">KELUAR -></button> 
         </div>
     </div>
 </body>
+<script>
 
+    function keluar(){
+        window.open('ambilkartu.html');
+        window.close('jenistransaksi.html');
+    }
+</script>
 </html>
